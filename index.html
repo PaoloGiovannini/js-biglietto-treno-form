@@ -12,21 +12,49 @@
         <h1 class="text-center">Calcola il prezzo del tuo biglietto</h1>
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-4">
-                    
+                <div class="col-12 col-md-4 text-center">
+                    <h4>Nome e cognome</h4>
+                    <input type="text" id="nomeCognome"> 
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4 text-center">
                     <h4>Km da percorrere</h4>
                     <input type="number" id="km">
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4 text-center">
                     <h4>Fascia d'età</h4>
-                    <input type="number" id="eta">
+                    <select id="eta">
+                        <option value="maggiorenne">Maggiorenne</option>
+                        <option value="minorenne">Minorenni</option>
+                        <option value="senior">Over 65</option>
+                    </select>
                 </div>
             </div>
             <div class="text-center">
             <button id="generaBiglietto">Genera</button>
             <button id="resettaBiglietto">Annulla</button>
+            </div>
+
+            <div class="d-none" id="biglietto">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Nome Passeggero</th>
+                        <th scope="col">Offerta</th>
+                        <th scope="col">Carrozza</th>
+                        <th scope="col">Codice CP</th>
+                        <th scope="col">Costo biglietto</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th id="nome"></th>
+                        <td id="tipoBiglietto"></td>
+                        <td id="Carrozza"></td>
+                        <td id="codicePrenotazione"></td>
+                        <td id="costoBiglietto"></td>
+                      </tr>
+                    </tbody>
+                  </table>
             </div>
             
 
